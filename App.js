@@ -1,11 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
+import Main from './Components/Main';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Welcome to PocketBook! 📖</Text>
-      <StatusBar style="auto" />
+
+      <Main />
     </View>
   );
 }
@@ -18,7 +19,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    fontSize: 25
-
-  },
+    marginTop: 150
+  }
 });
